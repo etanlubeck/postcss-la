@@ -1,5 +1,5 @@
 deployment: 
   staging: 
-    branch: master 
+    branch: heroku-master
     heroku: 
       appname: postcss-la
