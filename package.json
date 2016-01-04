@@ -1,11 +1,22 @@
 {
-  "name": "postcss-cssla",
+  "name": "postcss-la",
+  "repository": "https://github.com/etanlubeck/postcss-la",
   "version": "1.0.0",
-  "description": "A talk about postCSS",
+  "description": "A little talk about postCSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava test/*.js",
+    "start": "node index.js"
   },
   "author": "Nate Lubeck",
-  "license": "ISC"
+  "email": "me@natelubeck.com",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.9.1"
+  },
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "hapi": "^11.1.4",
+    "postcss": "^5.0.14"
+  }
 }
