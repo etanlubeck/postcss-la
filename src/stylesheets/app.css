@@ -1,11 +1,7 @@
-/* PreCSS - FTW */
-/* Yah! Partials */
 @import "partials/_variables.css";
 
-/* Arrays */
 $array: (foo, bar, baz);
 
-/* Loops */
 @each $i in $array {
   .$i {
     content: '$i';
@@ -15,9 +11,6 @@ $array: (foo, bar, baz);
   }
 }
 
-/* Mixins
-TODO: convert variables to a numerical value. start, end, increment
-*/
 
 @define-mixin grid $size, $width, $columns {
   @media only screen and (min-width: $(width)px) {
@@ -29,14 +22,12 @@ TODO: convert variables to a numerical value. start, end, increment
   }
 }
 
-/* Generates a grid with .col-xs-* at min-width: 320px with 18 columns */
+
 .container {
   display: flex;
 
 }
 @mixin grid xs,320,18;
-
-/* CSS4 */
 
 :any-link {
   background: yellow;

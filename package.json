@@ -9,8 +9,8 @@
     "start": "node index.js",
     "webpack": "webpack --config scripts/webpack.config.js",
     "browserify": "browserify --config scripts/browserify.config.js",
-    "postcss": "postcss scripts/postcss.js",
-    "gulp": "gulp scripts/gulpfile.js"
+    "postcss": "node scripts/postcss.js",
+    "gulp": "gulp --gulpfile scripts/gulpfile.js"
   },
   "author": "Nate Lubeck",
   "email": "me@natelubeck.com",
@@ -22,7 +22,10 @@
     "autoprefixer": "^6.2.3",
     "cssnano": "^3.4.0",
     "dotenv": "^1.2.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
     "hapi": "^11.1.4",
-    "postcss": "^5.0.14"
+    "postcss": "^5.0.14",
+    "precss": "^1.4.0"
   }
 }
