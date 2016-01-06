@@ -3,24 +3,29 @@ require('dotenv').load();
 
 const Hapi = require('hapi');
 const Webpack = require('webpack');
+const Vision = require('vision');
 const WebpackPlugin = require('hapi-webpack-plugin');
 const server = new Hapi.Server();
 
-server.connection({port: process.env.PORT || 3000});
-server.views({
-    engines: {
-        html: require('handlebars')
-    },
-    relativeTo: __dirname,
-    path: './views',
-    layoutPath: './views/layout',
-    helpersPath: './views/helpers'
+server.register(Vision, (err) => {
+  server.views({
+      engines: {
+          html: require('handlebars')
+      },
+      relativeTo: __dirname,
+      path: './views',
+      layoutPath: './views/layout',
+      helpersPath: './views/helpers'
+  });
 });
+server.connection({port: process.env.PORT || 3000});
+
 server.route({
   path: '/',
   method: 'GET',
-  handler: function(req, res) {
-    res('Hello World');
+  handler: function(request, reply) {
+    console.log(arguments);
+    reply.view('index', {title: 'CSS.la - PostCSS Talk'});
   }
 });
 
