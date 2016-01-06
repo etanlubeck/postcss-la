@@ -12,7 +12,9 @@ postcss is an ecosystem of plugins that transforms CSS.
  - postcss itself creates an AST of the file(s) passed to it, if NO plugins or processors are passed as an argument then the file remains unchanged.
 
 Example:
-
+Beginner - knows css but not preprocessors
+Intermediate - knows some sort of preprocessor (sass, less, stylus)
+Advanced - uses postcss already, how to write a plugin
 
 if you use autoprefixer, you're using postcss.
 
@@ -22,5 +24,3 @@ if you use autoprefixer, you're using postcss.
  - Webpack ```npm run webpack```
  - Browserify ```npm run browserify```
  - Gulp ```npm run gulp```
-
- 
