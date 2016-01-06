@@ -4,6 +4,7 @@ var postcss = require('postcss'),
   postcss([ require('autoprefixer'), require('cssnano') ])
   .process(css, { from: '../src/app.css', to: '/app.css' })
   .then(function (result) {
+    'use strict';
       fs.writeFileSync('app.css', result.css);
-      if ( result.map ) fs.writeFileSync('app.css.map', result.map);
+      if ( result.map ) {fs.writeFileSync('app.css.map', result.map);}
   });
