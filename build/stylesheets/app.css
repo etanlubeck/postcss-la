@@ -1,0 +1,121 @@
+.foo {
+  content: 'foo';
+
+}
+
+
+.bar {
+  content: 'bar';
+  background: rgba(#056ef0, 0.5);
+
+}
+
+
+.baz {
+  content: 'baz';
+
+}
+
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+@media only screen and (min-width: 320px) {
+
+
+  .col-xs-1 {
+    width: calc((1/320)*100)%;
+
+  }
+
+
+  .col-xs-2 {
+    width: calc((2/320)*100)%;
+
+  }
+
+
+  .col-xs-3 {
+    width: calc((3/320)*100)%;
+
+  }
+
+
+  .col-xs-4 {
+    width: calc((4/320)*100)%;
+
+  }
+
+
+  .col-xs-5 {
+    width: calc((5/320)*100)%;
+
+  }
+
+
+  .col-xs-6 {
+    width: calc((6/320)*100)%;
+
+  }
+
+
+  .col-xs-7 {
+    width: calc((7/320)*100)%;
+
+  }
+
+
+  .col-xs-8 {
+    width: calc((8/320)*100)%;
+
+  }
+
+
+  .col-xs-9 {
+    width: calc((9/320)*100)%;
+
+  }
+
+
+  .col-xs-10 {
+    width: calc((10/320)*100)%;
+
+  }
+
+
+  .col-xs-11 {
+    width: calc((11/320)*100)%;
+
+  }
+
+
+  .col-xs-12 {
+    width: calc((12/320)*100)%;
+
+  }
+
+}
+
+:any-link {
+  background: yellow;
+}
+
+header:has(h1) {
+  content: '';
+}
+
+
+.menu {
+    width: calc(4 * 400px);
+}
+
+.menu_link {
+    background: #056ef0;
+    width: 400px;
+}
+
+/*# sourceMappingURL=app.css.map */
